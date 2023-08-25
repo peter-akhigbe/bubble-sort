@@ -1,18 +1,17 @@
-def bubble_sort(arr)
-  swapped = false
-  arr_lent = arr.length
+myArray = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
-  while swapped == false
-    count = 0
-    (arr_lent - 1).times do |index|
+def bubble_sort(arr)
+  loop do
+     swapped = false
+     (arr.length - 1).times do |index|
       if arr[index] > arr[index + 1]
         arr[index], arr[index + 1] = arr[index + 1], arr[index]
-        count += 1
+        swapped = true
       end
     end
-    swapped = true if count % (arr_lent - 1) == 0
+      break if swapped == false
   end
   arr
 end
 
-p bubble_sort([4, 3, 78, 2, 0, 2]) # => [0,2,2,3,4,78]
+p bubble_sort(myArray) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
