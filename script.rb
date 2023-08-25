@@ -1,4 +1,4 @@
-myArray = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+my_array = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 def bubble_sort(arr)
   loop do
@@ -14,4 +14,4 @@ def bubble_sort(arr)
   arr
 end
 
-p bubble_sort(myArray) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+p bubble_sort(my_array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
